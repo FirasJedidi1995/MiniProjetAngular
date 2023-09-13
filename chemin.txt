@@ -1,0 +1,3 @@
+1-creéer des cv : chaque cv représente une personne => class Personne
+2-Initier mes Personnes au niveau de cv Component 
+3-chaque Personne devra étre représenter par un item 

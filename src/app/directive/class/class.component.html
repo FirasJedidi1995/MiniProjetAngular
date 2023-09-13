@@ -1,0 +1,12 @@
+<ol class="list-group">
+  <li class="list-group-item" *ngFor="let team of teams; let ind=index">{{team}} -{{ind}}-</li>
+</ol>
+
+<p [ngClass]="{ est: est, barca: barca, milan: milan }">class works!</p>
+
+<button (click)="changeTeam()" class="btn btn-danger">Changer</button>
+
+<div appHighlight>Bonjour je test une directive</div>
+<input *ngIf="show" appRainbow type="text" class="form-control" />
+<button class="btn btn-primary" (click)="show = !show">Show/ !Show</button>
+

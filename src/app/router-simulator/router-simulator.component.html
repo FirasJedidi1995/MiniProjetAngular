@@ -1,0 +1,10 @@
+<!-- <select #selectComposant (click)="goTocomponent(selectComposant.value)">
+  <option value="cv">cv</option>
+  <option value="color">color</option>
+  <option value="rsimulator">router simulator</option>
+</select> -->
+<select class="form-control" [(ngModel)]="path" (change)="goToPath()">
+  <option value="">Cv</option>
+  <option value="todo">Todo</option>
+  <option value="color">Color</option>
+</select>

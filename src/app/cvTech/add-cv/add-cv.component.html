@@ -1,0 +1,63 @@
+<form #formulaire="ngForm">
+  <label for="name">Name</label>
+  <input
+    required
+    type="text"
+    id="name"
+    ngModel
+    name="name"
+    class="form-control"
+  />
+
+  <label for="firstname">Firstname</label>
+  <input
+    required
+    type="text"
+    id="firstname"
+    ngModel
+    name="firstname"
+    class="form-control"
+  />
+
+  <label for="job">Job</label>
+  <input
+    required
+    type="text"
+    id="job"
+    ngModel
+    name="job"
+    class="form-control"
+  />
+
+  <label for="age">Age</label>
+  <input
+    min="0"
+    max="170"
+    type="number"
+    id="age"
+    ngModel
+    name="age"
+    class="form-control"
+  />
+
+  <label for="cin">Cin</label>
+  <input
+    required
+    type="number"
+    id="cin"
+    ngModel
+    name="cin"
+    class="form-control"
+  />
+
+  <label for="path">Path</label>
+  <input type="text" id="path" ngModel name="path" class="form-control" />
+
+  <button
+    [disabled]="formulaire.invalid"
+    (click)="addPersonne(formulaire)"
+    class="btn btn-primary"
+  >
+    Envoyer
+  </button>
+</form>
